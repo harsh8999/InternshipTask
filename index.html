@@ -2,6 +2,12 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">    
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title></title>
@@ -9,10 +15,35 @@
 
     </style>
 </head>
-<body>
-    <input type="text" placeholder="Name">
-    <input type="text" placeholder="">
-    <input type="text" placeholder="Name">
-    <input type="text" placeholder="Name">
+<body id="bod">
+   
+    <div class="container" id="div1">
+        <div class="row justify-content-md-center">
+            <div class="col col-sm-1">
+                <button type="button" class="btn btn-primary" onclick="minusClick(this)" id="btm1" style="visibility:hidden">-</button>
+            </div>
+            <div class="col col-sm-1">
+                <label>1</label>
+            </div>
+            <div class="col col-lg-2">
+                <input type="text" placeholder="Name">
+            </div>
+            <div class="col-lg-2">
+                <input type="number" id="quan1" placeholder="Quantity" onreadystatechange="changeAmount(this)">
+            </div>
+            <div class="col-lg-2">
+                <input type="number" id="rate1" placeholder="Rate">
+            </div>
+            <div class="col col-lg-2">
+                <input type="number" placeholder="Amount" id="amt1">
+            </div>
+            
+            <div class="col col-lg-2">
+                <button type="button" class="btn btn-primary" onclick="addClick()" id="bt1">+</button>
+            </div>
+            
+        </div>
+    </div>
+    
 </body>
 </html>
