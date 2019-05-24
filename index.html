@@ -11,13 +11,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title></title>
-    <style>
-
-    </style>
 </head>
-<body id="bod">
-   
-    <div class="container" id="div1">
+<body>
+    <div id="over">
+    <div class="container" id="div0">
         <div class="row justify-content-md-center">
             <div class="col col-sm-1">
                 <button type="button" class="btn btn-primary" onclick="minusClick(this)" id="btm1" style="visibility:hidden">-</button>
@@ -29,20 +26,62 @@
                 <input type="text" placeholder="Name">
             </div>
             <div class="col-lg-2">
-                <input type="number" id="quan1" placeholder="Quantity" onreadystatechange="changeAmount(this)">
+                <input type="number" id="quan1" placeholder="Quantity" onchange="changeAmount()">
             </div>
             <div class="col-lg-2">
-                <input type="number" id="rate1" placeholder="Rate">
+                <input type="number" id="rate1" placeholder="Rate" onchange="changeAmount()">
             </div>
             <div class="col col-lg-2">
-                <input type="number" placeholder="Amount" id="amt1">
+                <input type="number" placeholder="Amount" id="amt1" onchange="changeAmount()">
             </div>
             <div class="col col-lg-2">
                 <button type="button" class="btn btn-primary" onclick="addClick()" id="bt1">+</button>
-            </div>
-            
+            </div>  
         </div>
     </div>
-    
+</div>
+<hr >  
+<div>
+<div class="container" id="divt">
+    <div class="row justify-content-md-center">
+        <div class="col col-lg-1">
+            <label>Sub Total</label>
+        </div>
+        <div class="col col-lg-0">
+            <input type="text" name="Sub Total" id="st">
+        </div>
+    </div>
+</div>
+<div class="container" id="divd">
+    <div class="row justify-content-md-center">
+        <div class="col col-lg-1">
+            <label>Discount</label>
+        </div>
+        <div class="col col-lg-0">
+            <input type="text" name="Discount" id="discount" onchange="changeAmount()" >
+        </div>
+    </div>
+</div>
+<div class="container" id="divtax">
+    <div class="row justify-content-md-center">
+        <div class="col col-lg-1">
+            <label>Tax</label>
+        </div>
+        <div class="col col-lg-0">
+            <input type="text" name="Tax" id="tax" onchange="changeAmount()" >
+        </div>
+    </div>
+</div>
+<div class="container" id="divto">
+    <div class="row justify-content-md-center">
+        <div class="col col-lg-1">
+            <label>Total</label>
+        </div>
+        <div class="col col-lg-0">
+            <input type="text" name="Total" id="total">
+        </div>
+    </div>
+</div>
+</div>
 </body>
 </html>
